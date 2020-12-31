@@ -1,0 +1,182 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col s5">
+
+            <div class="card">
+                <div class="card-content">
+                    <form #flightForm = "ngForm" (ngSubmit) = "addFlight(flightForm)" >
+                        <div class = "row">
+                            <div class = "input-field col s12">
+                                <input type="text" name = "Year" #year="ngModel" [(ngModel)]="flightService.selectedFlight.Year" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "Month" #month="ngModel" [(ngModel)]="flightService.selectedFlight.Month" placeholder="Ingrese el mes" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "DayofMonth" #dayofMonth="ngModel" [(ngModel)]="flightService.selectedFlight.DayofMonth" placeholder="Ingrese el dia del mes" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "DayOfWeek" #dayOfWeek="ngModel" [(ngModel)]="flightService.selectedFlight.DayOfWeek" placeholder="Ingrese el dia de la semana" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "DepTime" #depTime="ngModel" [(ngModel)]="flightService.selectedFlight.DepTime" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "CRSDepTime" #crsDepTime="ngModel" [(ngModel)]="flightService.selectedFlight.CRSDepTime" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "ArrTime" #arrTime="ngModel" [(ngModel)]="flightService.selectedFlight.ArrTime" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "CRSArrTime" #crsArrTime="ngModel" [(ngModel)]="flightService.selectedFlight.CRSArrTime" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "UniqueCarrier" #uniqueCarrier="ngModel" [(ngModel)]="flightService.selectedFlight.UniqueCarrier" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "FlightNum" #flightNum="ngModel" [(ngModel)]="flightService.selectedFlight.FlightNum" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "TailNum" #tailNum="ngModel" [(ngModel)]="flightService.selectedFlight.TailNum" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "ActualElapsedTime" #actualElapsedTime="ngModel" [(ngModel)]="flightService.selectedFlight.ActualElapsedTime" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "CRSElapsedTime" #crsElapsedTime="ngModel" [(ngModel)]="flightService.selectedFlight.CRSElapsedTime" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "AirTime" #airTime="ngModel" [(ngModel)]="flightService.selectedFlight.AirTime" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "ArrDelay" #arrDelay="ngModel" [(ngModel)]="flightService.selectedFlight.ArrDelay" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "DepDelay" #depDelay="ngModel" [(ngModel)]="flightService.selectedFlight.DepDelay" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "Origin" #origin="ngModel" [(ngModel)]="flightService.selectedFlight.Origin" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "Dest" #dest="ngModel" [(ngModel)]="flightService.selectedFlight.Dest" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "Distance" #distance="ngModel" [(ngModel)]="flightService.selectedFlight.Distance" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "TaxiIn" #taxiIn="ngModel" [(ngModel)]="flightService.selectedFlight.TaxiIn" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "TaxiOut" #taxiOut="ngModel" [(ngModel)]="flightService.selectedFlight.TaxiOut" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "Cancelled" #cancelled="ngModel" [(ngModel)]="flightService.selectedFlight.Cancelled" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "Diverted" #diverted="ngModel" [(ngModel)]="flightService.selectedFlight.Diverted" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "CarrierDelay" #carrierDelay="ngModel" [(ngModel)]="flightService.selectedFlight.CarrierDelay" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "WeatherDelay" #weatherDelay="ngModel" [(ngModel)]="flightService.selectedFlight.WeatherDelay" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "NASDelay" #nasDelay="ngModel" [(ngModel)]="flightService.selectedFlight.NASDelay" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "SecurityDelay" #securityDelay="ngModel" [(ngModel)]="flightService.selectedFlight.SecurityDelay" placeholder="Ingrese el anio" >
+                            </div>
+                            <div class = "input-field col s12">
+                                <input type="text" name = "LateAircraftDelay" #lateAircraftDelay="ngModel" [(ngModel)]="flightService.selectedFlight.LateAircraftDelay" placeholder="Ingrese el anio" >
+                            </div>
+
+
+                            <div class="card-action">
+                                <div class="input-field- col s12">
+                                    <button class="btn rigth">Guardar</button>
+                                </div>
+                                <div class="input-field- col s12">
+                                    <button class="btn left" (click) = "flightForm.reset()">Limpiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col s7">
+            <table>
+                <th>Year</th>
+                <th>Month</th>
+                <th>DayofMonth</th>
+                <th>DayOfWeek</th>
+                <th>DepTime</th>
+                <th>CRSDepTime</th>
+                <th>ArrTime</th>
+                <th>CRSArrTime</th>
+                <th>UniqueCarrier</th>
+                <th>FlightNum</th>
+                <th>TailNum</th>
+                <th>ActualElapsedTime</th>
+                <th>CRSElapsedTime</th>
+                <th>AirTime</th>
+                <th>ArrDelay</th>
+                <th>DepDelay</th>
+                <th>Origin</th>
+                <th>Dest</th>
+                <th>Distance</th>
+                <th>TaxiIn</th>
+                <th>TaxiOut</th>
+                <th>Cancelled</th>
+                <th>CancellationCode</th>
+                <th>Diverted</th>
+                <th>CarrierDelay</th>
+                <th>WeatherDelay</th>
+                <th>NASDelay</th>
+                <th>SecurityDelay</th>
+                <th>LateAircraftDelay</th>
+            </table>
+            <tbody>
+                <tr *ngFor = "let flight of flightService.flight">
+                    <td>{{flight.Year}}</td>
+                    <td>{{flight.Month}}</td>
+                    <td>{{flight.DayofMonth}}</td>
+                    <td>{{flight.DayOfWeek}}</td>
+                    <td>{{flight.DepTime}}</td>
+                    <td>{{flight.CRSDepTime}}</td>
+                    <td>{{flight.ArrTime}}</td>
+                    <td>{{flight.CRSArrTime}}</td>
+                    <td>{{flight.UniqueCarrier}}</td>
+                    <td>{{flight.FlightNum}}</td>
+                    <td>{{flight.TailNum}}</td>
+                    <td>{{flight.ActualElapsedTime}}</td>
+                    <td>{{flight.CRSElapsedTime}}</td>
+                    <td>{{flight.AirTime}}</td>
+                    <td>{{flight.ArrDelay}}</td>
+                    <td>{{flight.DepDelay}}</td>
+                    <td>{{flight.Origin}}</td>
+                    <td>{{flight.Dest}}</td>
+                    <td>{{flight.Distance}}</td>
+                    <td>{{flight.TaxiIn}}</td>
+                    <td>{{flight.TaxiOut}}</td>
+                    <td>{{flight.Cancelled}}</td>
+                    <td>{{flight.CancellationCode}}</td>
+                    <td>{{flight.Diverted}}</td>
+                    <td>{{flight.CarrierDelay}}</td>
+                    <td>{{flight.WeatherDelay}}</td>
+                    <td>{{flight.NASDelay}}</td>
+                    <td>{{flight.SecurityDelay}}</td>
+                    <td>{{flight.LateAircraftDelay}}</td>
+
+                </tr>
+            </tbody>
+        </div>
+    </div>
+
+</div>
